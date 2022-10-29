@@ -1,0 +1,75 @@
+-- Formulários --
+
+* https://www.figma.com/proto/sgcJKpGAeVqh7rf2pwsOd9/Explorer-Stage-03-Projeto-01?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1
+
+* Preview - Ctrl + Shift + V
+
+* Action diz pra onde os dados do form vai ser enviado. Se eu n uso, fica no mesmo lugar.
+* GET x POST. Cada um envia recursos de uma forma, o get pela url, e o post pelo corpo da requisição. Não entendi essas coisas.
+
+* O method tem algumas formas. As mais comuns são:
+	GET: Receber e enviar recursos
+	POST: SÓ ENVIAR recursos
+		- recursos são o que a pessoa insere, ou seja, está relacionado a dados. Quando a pessoa 		insere, tá enviando, qnd agt digita a url de um site e vai, tá recebendo (aí acho que é pq pega no 		servidor e trás o site pra gnt, mas ele n explicou isso, pesquisar melhor dps).
+		- se eu n uso o method, ele usa o GET por padrão.
+- Aí ele foi explicando q no GET agt qnd envia os dados, na url fica pra onde as coisas vão e infos. Ex, dps do google.com tem o "/search", q é pra onde vai, ou seja, oq agt colocaria no action. Dps tem o "q" q é o que agt pesquisou, e por aí vai nesses dados ocultos aí, mas que aparecem na url (agt vê cada um deles no Payload do Network no devtools). Mas a questão aqui é que os recursos são enviados pela url apenas, no GET. (nisso acho q entra a questão da requisição (envio de recursos) e resposta (recebimento de recursos)).
+- Ele falou sobre a ferramenta network do devtools, e sobre algumas coisas estarem no cabeçalho e outras no corpo, e que no POST, qnd agt coloca os recursos no corpo, a url fica diferente. Mas eu n entendi nada dessa parte. Ele disse que estamos vendo por alto hj e que vms entender melhor mais pra frente no Explorer.
+
+-- dessa parte que n entendi foi da aula 1 a 4. **************** voltar lá dps
+
+* Iniciando com a página, ele já enxergou antes de codar como a coisa seria montada. Lembra daquela questão de visualizar antes no figma como agt já poderia fazer e até msm padrão de projeto? Então, é isso.
+
+* Ele fala um pouco sobre o live server. Ele, ao invés de agt abrir o arquivo com o protocolo file, que só abre uma parada que agt tenha, ele usa o protocolo HTTP, usa o nosso IP e a porta 5500 q é a referente ao diretório que tá o nosso arquivo, cria um servidorzinho dentro do vscode, e aí se eu fecho o vscode ele n funciona mais.
+
+* fieldset - conjunto de campos. É uma tag semantica pra dizer que ali agt vai ter varios campos dentro do formulário.
+* legend - a legenda desse fieldset.
+
+* inline-block - é inline por ocupar só o seu espaço na linha, deixando oq vir depois, caso este seja inline tbm, entrar do lado dele, mas oq ele tem de block é a possibilidade de aceitar width, height e outras props q o block aceita.
+
+* O label dá a descrição pro input e ajuda na acessibilidade.
+
+* No dev tools tem umas coisinhas sobre acessibilidade que agt consegue ver qnd passa o mouse por cima de um elemento com a ferramenta dele. Mayke comentou sobre o constraste, q ele dá um alerta qnd o nível de contraste n ta bom, pq aí agt tem q escurecer mais, pensando em pessoas q n vão enxergar direito. Daí agt clica na cor, e vai descendo a fim de escurecer aquela cor até que o sinal de alerta vire um check mark verdinho, aí o contraste de acessibilidade ta bom. Isso agt vai fazer pro label span (textinho q fica do lado do label) e pro texto de dentro dos campos de qnd a pessoa digita. Mas pro label span agt coloca isso pra and a pessoa faz o hover, q aí agt tem o estilo elegante suave, mas tbm a acessibilidade.
+
+* Pra fazer as coisas voltarem na identação com o tab é: Shift + Tab
+
+* Vendor Prefixes (Prefixos Vendor): prefixos criados pelos fabricantes de navegadores adicionados a algumas propriedades "experimentais ou fora dos padrões CSS". Formas específicas de se dizer aquela prop pra cada navegador, pra n acontecer de quebrar o código, ou seja, em determinado navegador aquela funcionalidade, a propriedade desejada, não rolar. Parece que esses prefixos são criados pros devs poderem usar a prop enquanto o navegador está no processo de padronização, que provavelmente se trata do processo de ele se encaixar em todos os conformes da linguagem, do CSS no caso. Segundo mayke é enquanto eles não implementaram a prop da forma padrão, q seria "appearance" no nosso caso. Enquanto não, agt usa os vendor prefixes. Provavelmente é por isso que pra alguns o VSCode já fala pra evitar usar, dizendo q a prop com o vendor prefix é não-padronizada, pq o browser já deve ter padronizado, implementado o padrão. (MAS DAR UMA PESQUISADA MELHOR EM PESSOAS FALANDO SOBRE ISSO)
+  - esse é pro mozilLa firefox: -moz-
+  - esse é pro Chrome, Safari, versões mais recentes do Opera: -webkit-
+  - internet explorer (ms de microsoft): -ms-
+  - Versões antigas do Opera: -o-
+	* e aí tem outros. Aí agt usa o site: caniuse.com pra saber qual o vedor prefix eu preciso usar hoje pra prop funcionar, lá vai dizer qual já padronizou e qual n. 
+
+* Outro atalho: Ctrl + Backspace (<-) apaga a palavra toda, e isso em todo lugar, até fora do VSCode msm.
+* Atalho pra selecionar a palavra toda em todo lugar: Ctrl + Shift + Seta
+
+* Ele começa a falar sobre o ponto de acessibilidade no checkbox em: 5:14.
+
+* Atalho acessibilidade pra acessar as coisas com o tab: pra ir usa o TAB, pra voltar usa Shift + TAB.
+
+* Sobre o checkbox, um mlk trouxe um insight muito irado no fórum sobre essa aula, que em outros navegadores o outline é de outra cor, sendo que o mayke definiu que o outline do checkbox seria preto. Daí ele definiu o outline do select, do input normal e do texarea como pretos tbm, pra ficar padronizado no nosso projeto pra todo navegador. Acho que isso é algo de boas práticas, ou sla ual o termo, mais avançado. Não sei se teria como estabelecer uma propriedade que pegasse a cor padrão do navegador, pro outline do checkbox n ficar preto, mas sim da cor que o navegador usado botar. E se tiver como, n sei ual a melhor forma.
+
+* Tem uns materias que podem ajudar a entender coisas que tive dúvida que estão listados por níveis no biblioteca explorer.
+* Uma coisa que preciso revisar mt pra dominar legal é flexibilidade das coisas pra responsividade.
+
+* Validação: questão de os inputs que são de algo específico, tipo de email, dizer pra pessoa inserir um email válido se a pessoa n coloca email, mas outra coisa. E tbm a questão dos inputs que são obrigatórios e os que não (colocar o atributo "required" nesses). Questão de mínimo de caracteres ("minlength", e máximo é "maxlength"), de ter q ter caracteres especias, números e letras maiúsculas.
+
+parei em 4:17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

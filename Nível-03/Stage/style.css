@@ -1,0 +1,323 @@
+/* :root {
+  * estou mudando o tamanho de fonte padrão. Agr vai usar 62,5% de 16px, q é 10px. Pra achar o rem eu divido o valor em px pelo tamanho de fonte padrão, que agora é 10px, o que é mais fácil de calcular. Mas eu tbm preciso reestabelecer o tamanho de fonte pro meu body como 16px em rem pro texto não ficar naturalmente pequeno.
+  font-size: 62,5%;
+  /*isso aqui eu vou ter que revisar um milhão de vezes e refazer um milhão de vezes até aprender de vdd, até entrar na minha cabeça.
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  /*aqui é o seguinte: se eu tenho um conteúdo, um width 200px e um padding 100px sem o box-sizing border-box, ele vai contar a partir do conteúdo, ou seja, vai somar 100 com 200 e a caixa vai ficar enorme. Se eu ponho o box-sizing border-box eu conto a partir da borda, então eu mexo nesse momento com o espaço que o conteúdo vai ter pra se dispor, se ligou? nesse caso eu vou apertar ele, e não aumentar a caixa. E a caixa vai ter os 200px e tbm 100px de preenchimento interno *dentro* desses 200px. Oq sobrar vai ser oq o conteúdo vai ter pra se dispor. Agr se eu coloco padding maior q o width, ou um conteúdo com width maior do q o valor que sobrar pra ele nesse cálculo, eu já n sei dizer o rolê que acontece*/
+}
+
+/*só aqui que fui entender o before. Estou criando um elemento html por aqui, de algo que fica antes do conteúdo do meu body, ainda dentro do body. O meu body tem a cor cinza, mas antes dele tem alguma coisa, mas que ainda faz parte do meu body, que é essa cor azul escura aí. Eu posso usar isso, como é nosso caso aqui, e foi na nlw, pra coisas que ficam atrás de tudo, no background de body, tlgd, sem que eu precise, sla, criar uma div e usar o z-index, ou algo assim (oq n deixa deser uma forma, e inclusive eu n sei qual é a mais eficiente nem o porquê do mayke ter preferido usar o before)*/
+body::before {
+  content: '';
+  width: 100%;
+  height: 368px;
+
+  /*como eu to criando um elemento de html por aqui, eu preciso dizer todas as propriedades básicas desse tipo de elemento, que poderia ser um display, mas agt define o position q já conta*/
+  /*preciso dizer que é absolute, no block n funcionou*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  /*só até aqui ele ficaria por cima das coisas. Aí ag usa o z index, q é a ideia do prédio, ou então pensa no gráfico*/
+  z-index: -1;
+
+  background-color: #121214;
+}
+
+/*pq só por no body n pega pra esses outros, então tenho q por pra eles individualmente aqui*/
+body,
+input,
+select,
+textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+
+  /* font-size: 1.6rem; */
+}
+
+.page {
+  /*pq vemos um padrão de width em todo o nosso conteúdo*/
+  width: 736px;
+  /*se eu usasse o text-align center n daria certo*/
+  margin-inline: auto;
+}
+
+header {
+  /*dá pra ver que o header tem um limite estabelecido pela quebra da linha, parece q ta numa caixinha*/
+  width: 319px;
+
+  margin-top: 74px;
+}
+
+header h1 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: white;
+
+  margin-bottom: 24px;
+}
+
+header p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #42d3ff;
+}
+
+form {
+  /*pq min-height e n só height?*/
+  min-height: 300px;
+
+  /* Aplicando um gap de 48px pq temos uma distancia de 48px entre os fieldsets, o informações do evento, o privacidade e o dia e hora. Então se eu fizesse um outro fieldset, ele teria esse mesmo espaço. Repare que tbm fizemos isso no fieldset wrapper e no input wrapper, padronizando a distância entre os campos e as coisas, já que, segundo figma, são as mesmas. É uma forma de padronizarmos pra acelerar o processo de construção da página.*/
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  border-radius: 8px 8px 0 0;
+  background-color: #fafafc;
+
+  margin-top: 42px;
+  padding: 64px;
+}
+
+fieldset {
+  border: none;
+  /*tirar aquelas bordas q aparecem por padrão do navegador*/
+}
+
+/*eu preciso que haja uma caixa por fora das coisas, do fieldset e do input, por isso eu chamo de wrapper, mas é só uma caixa, poderia ser tipo "fieldset-container" sla. Porque eu preciso padrnizar os espaços entre os campos e as coisas dentro dos campos*/
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* agt aplica esse flex pra por o gap entre as coisas de input, mas criamos essa div aqui pq qnd agt poe direto no fieldset sem ter essa div esse flex n se aplica ao legend, apesar de ele tbm ser uma caixa q está dentro do fieldset, por um bug, n se sabe se é do navegador ou se é da tag, mas acontece qnd se tem um legend logo dps do fieldset. Aí agt tem que criar uma div e por eles dentro pra por algo entre eles. E agt quer q se aplique ao legend pq assim agt tem o espaço entre o input-title e o legend, sem ter q usar margin */
+}
+
+fieldset legend {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #32264d;
+
+  /*a linha q fica embaixo*/
+  border-bottom: 1px solid #e6e6f0;
+  width: 100%;
+  /*pra linha pegar tudo, dentro do padding do form tlgd. E o legend só pega width pq ele já é block. Se n pegasse, agt podia pensar q podia ser pq ele provavelmente seria inline*/
+
+  /*pro espaço entre o texto e a linha*/
+  padding-bottom: 16px;
+}
+
+.input-wrapper {
+  /*eu poderia ter feito essa questão da disposição dos elementos nessa caixa, como comentei no html, de outras formas, por ex.: colocando o label com block (já que a questão é o input pular pra baixo, e pelo label ser inline, eles ficam um do lado do outro), ou só pondo o input com width 100% (já que ele é inline-block e aceita isso, e com isso ele n caberia do lado do label e pularia pra baixo)*/
+  display: flex;
+  flex-direction: column;
+  /*depois disso o input vai automaticamente usar 100% do width por padrão*/
+}
+
+.input-wrapper label,
+.checkbox-wrapper label {
+  /*Eu precisei fazer uma caixa diferente pro wrapper do input checkbox, e as props do label são iguais desses dois wrappers (com excessão do margin q botamos aqui, q no checkbox n só n precisa como vai atrapalhar). Mas de resto vai ser diferente.*/
+  font-size: 14px;
+  line-height: 24px;
+  color: #4e4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #c1bccd;
+  /*aqui agt ajustou a questão do contraste no devtools pra acessibilidade (anotei mais no notas)*/
+
+  margin-left: 12px;
+
+  transition: 200ms;
+}
+
+.input-wrapper label span:hover {
+  color: #73707a;
+  /*aqui agt ajustou a questão do contraste no devtools pra acessibilidade (anotei mais no notas), pra ficar suave antes, mas a pessoa ter a possibilidade de escurecer passando o mouse*/
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+  background: #fafafc;
+  /* lembrando q esse background tbm é um shorthand */
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  height: 56px;
+  padding-inline: 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+  color: #73707a;
+  /*aqui agt tbm ajustou a questão do contraste no devtools pra acessibilidade (anotei mais no notas)*/
+}
+
+.input-wrapper textarea {
+  height: 168px;
+  padding: 18px 24px;
+}
+
+.input-wrapper select {
+  /* Tirando a setinha com o appearance, ela não dá pra manipular com css por padrão, segundo mayke (nem um padding pra ela ir mais pro lado? não), aí agt apaga ela e põe outra de svg */
+
+  appearance: none;
+  /* isso é pra setinha de selecionar q fica no canto direito em todo select, estamos dizendo pra ela sumir */
+
+  /* além de por esse "appearance" agt tem outras formas de falar dessa setinha, pq nem todo navegador entende colocando só "appearance". Daí agt usa os "vendor prefixes", onde cada um vai fazer referencia a navegadores específicos, daí agt põe todos (mais explicação no notas) */
+  /* esse é pro Chrome, Safari, versões mais recentes do Opera */
+  -webkit-appearance: none;
+  /* tinha uns outros aqui, mas pelo caniuse.com agt viu q os otros ja padronizaram (já entraram no padrão) e só precisa msm usar esse aqui (q é referente aos q ainda n entraram no padrão css pra essa prop) */
+
+  /*Fora que qnd usar essa parada, é bom por o padrão e também o com vendor prefix (será? isso é suposição minha, mas n sei se afeta em algo), pq pode ser q com o tempo a parada mude o comportamento, pare de funcionar pq rolou uma padronização, e a funcionalidade desejada não rola mais, e o site fica quebrado. Por isso q tem q ter manutenção das coisas*/
+
+  /* Aqui agt pegou o svg lá do figma, jogou no site do base64 (ta no notes), e pegou o "ready for css", ele transforma o svg em uma forma que vc consegue por a imagem aqui no css. Essa forma é pelo background-image, que sempre recebe uma url, onde agt coloca a url q agt quer. Nesse caso o base64 já pos a url da imagem do botãozinho de select que agt quer qnd agt converteu. E Base64 é uma forma de agt colocar imagem em formato de texto, basicamente. Nessa forma, alguns caracteres do svg são substituidos por caracteres chamados "Uni Code", sla, e o site da moça faz isso pra gnt*/
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  /* Aí como agt usa a imagem como background-image, ele fica repetido. Daí agt usa esse reapeat no-repeat aí, assim como agt ajusta a posição*/
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+  /*A ideia desse position é a msm de qnd agt usa position fixed, os pixels falam da distancia entre  elemento e o canto q vc ta falando. Aqui ele tem 24px de distância entre o canto direito e o elemento, e ele usa 50% entre o elemento e o topo pra poder por o select no meio, centralizado, pq se n agt teria q saber a altura do select, dividir e por a metade, então com 50% é mais facil*/
+}
+
+.input-wrapper select:hover {
+  cursor: pointer;
+}
+
+.col-3 {
+  display: flex;
+  gap: 20px;
+}
+
+/* Estou falando "De dentro do col-3, no primeiro nível, pega o filho 'div' número 1, ou seja, o primeiro" (e é importante dizer q é o primeiro pq se não ele ia aplicar isso pra todo filho número de dentro de todas as divs q agt tivesse dentro do .col-3, no caso de agt ter mais divs dentro das qeu agt já tem), já que temos 3 filhos, nth-child fala do número do filho. Eu poderia ter colocado uma outra class pra ele, ou id, e chamado por ela(e), mas assim agt padroniza q toda vez q agt tiver um agrupamento de 3 colonas do tipo col-3 e agt quiser q eles fiquem assim um do lado do outro, o primeiro vai sempre ter essas propriedades, no caso vai sempre pegar a maior parte do espaço */
+.col-3 > div:nth-child(1) {
+  width: 100%;
+  /*nisso ele vai pegar o espaço que ficou sobrando na caixa, os 100% do restante*/
+}
+
+.checkbox-wrapper {
+  /* display: flex;
+  align-items: center; */
+  /* isso aqui agt passa pro label pq como agt fez dps o checkbox na mão usando o before, agt precisa aplicar essas coisas ao label e ao before do label, só que como todos os dois fazem parte do label, agt coloca isso dentro do .checkbox-wrapper label, tlgd. Aí agt n lida mais com os elementos label e input, por isso agt tira daqui.*/
+
+  position: relative;
+  /*vai no .checkbox-wrapper input pra entender*/
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* tá aplicando ao label e ao before do label, como falei */
+
+  margin: 0;
+  /*tava com o margin dos outros labels, aí eu tirei desse pro align-items center dar certo*/
+}
+
+/* aqui ele primeiro tirou o input da tela com o display none, mas qnd falou sobre acessibilidade, disse que, qnd agt dá o tab, o tab n funciona qnd agt ta com o input em display none, pq ele n tá na tela, então o tab não vai funcionar. Nisso ele deixa o botão do tamanho do btão que agt criou e põe ele por cima do q agt criou, deixando eles um em cima do outro, usando o position absolute (q a propósito funciona como o fixed, jogando o elemento uma camada/andar pra cima). MAS ele é absoluto apenas dentro da caixa do .checkbox-wrapper, e isso pq agt aplicou um position relative no .checkbox-wrapper, que faz essa posição "absoluta" ser absoluta só dentro da relatividade do .checkbox-wrapper (não entendi isso). Se agt n definisse isso, esse input ficaria uma camada/andar acima na tela toda, e ia láaaa pra cima */
+/* Resumidamente agt vai manter os dois botões, mas vai sumir com o feio, pra manter a acessibilidade de um e a aparência do outro */
+.checkbox-wrapper input {
+  /* display: none; */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* agt pega o mesmo tamanho do botão que agt criou com o before do label pra ele ficar certinho por cima (e isso é importante pq qnd a pessoa clica ela clica na real no input, n no before, por isso eles tem q ter o msm tamanho) */
+  width: 24px;
+  height: 24px;
+
+  /* e ao invés de definir o display none, agt deixa ele em opacity 0, e isso pq, qnd ele fica por cima do before do label, qnd clica ele fica por cima da imagem q agt colocou de background usando o base64 (vai lá pra entender). Nisso perde o VÊzinho bonitinho. Daí agt precisa fazer ele sumir. (Eu n sei se teria uma forma de fazer ele ficar por baixo ao invés de por cima desse jeito aqui, tlgd. Talvez fosse mais fácil). E nisso tudo, ele precisa ficar por cima pq qnd agt usa o tab, o tab seleciona o checkbox do jeito que agt quer, e preserva a aparência. */
+  opacity: 0;
+}
+
+/* isso aqui é agt criando o checkbox na mão com css. Agt faz assim pq na real o checkbox padrão do html n vai ficar bonitinho igual o do figma, q fica azulzinho, com border radius e etc. Aí agt faz como parte do label, já que eles estão um do lado do outro (mas acho q isso é só uma forma, acho q poderia ser uma div) */
+.checkbox-wrapper label::before {
+  content: '';
+  display: block;
+  /* segundo mayke, agt pode por display block pq na caixa de fora, no caso a .checkbox-wrapper, agt tem o display em flex, aí por isso agt pode usar o block aqui, e se n fosse flex lá agt teria q usar inline aqui (? n entendi, mas acho q é pq o flex faz eles ficarem um do lado do outro, e o block fraria ele pular pra baixo, e se n tivesse flex lá eu teria q por inline aqui pra ficar um do lado do outro, como forma de fazer isso eles ficarem um do lado do outro). Agt criando pseudo-elements precisamos sempre dizer qual o display (ou o position) */
+
+  /* esses abaixo agt pega no figma das props do checkbox bonitinho de lá */
+  width: 24px;
+  height: 24px;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  /* pra ele achar essa info de radius foi dificil, ele foi clicando até a última ramificaçãozinha lá no figma e viu pelo design, não pelo inspect, no começo, onde às vezes fica "mixed", embaixo da altura (H) */
+}
+
+/* Aqui estamos fazendo o seguinte: quando o input fica checked (ou seja, quando agt clica pro VÊzinho aparecer) a propriedade que eu colocar aqui vai acontecer no before no label, o checkbox que agt criou. É tipo aquela questão do evento do onclick (já que o :checked é uma pseudo-class, q fala de estado do elemento), quando esse evento acontece, algo é aplicado ao elemento que eu quero. */
+/* Oq eu não entendi foi que agt deu display none no input, e agr esse check tá funcionando mesmo ele tendo desaparecido da tela (???). Segundo Mayke o check acontece por conta do "for" do label que tá ligando ele com o input pelo id dele. Isso faz ele funcionar msm tendo sido desaparecido? Então ao clicar usando o for ele n deveria fazer o input reaparecer ou algo assim? */
+/* Isso de display none foi antes de ele falar de acessibilidade, q foi qnd ele mudou isso. */
+.checkbox-wrapper input:checked + label::before {
+  /* no caso o que vai acontecer de propriedade aqui vai ser agt aplicar um background, que vai ser o simbolo de check do figma. Agt vai aplicar usando aquele recurso do base64 */
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7.00003L19.59 5.59003L9 16.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+  /* nesse caso nem preciso aplicar o no-repeat */
+}
+/* eu poderia usar isso pra fazer um dark mode ou algo assim q em outros projetos eu fiz adicionando classe com js? Tentar. */
+/* tem um atributo "checked" q de repente daria pra fazer um js isso aí executando uma função q adiciona uma classe */
+
+/* Mesmo agt fazendo todo o rolê de acessibilidade pro tab, ainda tem uma parada. Qnd agt usa o tab, ele vai ficar em cima o checkbox (tanto q se agt usa o espaço ele seleciona a parada e dá check), mas o outline n acontece (ficar em foco, com a borda mais escura, mostrando que está sobre aquela opção, não necessariamente em hover, é outra pseudo-class). Nisso agt uso a pseudo-class ":focus" pra dizer: "quando o input estiver em foco, eu vou aplicar essas propriedades ao before", e no caso essas propriedades serão a aplicação do outline */
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+  /* o outline é igual o border, mas ele é usado mais em casos específicos, tipo pra acessibilidade */
+}
+/*cara, eu tentei aplicar isso de usar esse + em outro projeto, mas n consegui n. ????
+acho q a questão é q aqui é um determinado estado + um elemento que receberá as props. Não sei se foi assim q fiz no meu caso, pq se eu faço um elemento + elemento, já entra naquilo do a + a, que eu aplica a prop pra todo a que tem um a antes dele. Tentei depois me atentando a isso e n foi ainda assim ???? */
+  /* outra forma de fazer esse rolê aqui de qnd tiver em foco o before receber essa propriedade é aquele lance com js, de qnd em foco (usando o atributo "onfocus" no html) executar uma função js q adiciopna uma classe em algum lugar que recebe essa propriedade pro label::before */
+
+/* ele fez essa parte do form usando footer, mas poderia fazer de outras formas. Eu pensei em por um position absolute na div q tava aqui, tirar o padding do form e por margin equivalente em cada fieldset, aí seguia pras configs dessa parte aqui, com width, height, etc. Tentar dps */
+footer {
+  height: 136px;
+  background: #f0f0f4;
+  border-top: 1px solid #d6d6d6;
+  border-radius: 0 0 8px 8px;
+
+  display: flex;
+  flex-direction: column;
+  /* aula 1-13 stage 3, instante 3:30. Ele colocou isso pq o input tava pequeno no canto, mas disse que o display flex faz ele se ajustar ao eixo se expandindo. E com o column ele se estica pros lados, mas eu n entendi. Tentar estudar mais sobre flexbox pra entender isso*/
+
+  padding: 40px 64px;
+  margin-bottom: 100px;
+}
+
+footer .button {
+  height: 56px;
+
+  background: #04d361;
+  border: none;
+  border-radius: 8px;
+
+  color: white;
+  font-family: 'Archivo';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  /* até hoje n sei qual a do line height, como que eu sei, pq eu só pego oq tá no figma */
+}
+
+footer .button:hover {
+  background: #08a04c;
+}
+
+/* Aqui é o estado de inválido no input. Pseudo-class = estado. E esse inválido rola tanto quando é um input em que agt coloca o "required" quanto quando a pessoa digita algo que não corresponde, tipo um "ajdnkjsm" num campo de email. É por isso q no figma tem um input com borda vermelha, pra gente saber como é pra ficar o invalid */
+input:invalid {
+  border: 1px solid #ff1010;
+}
+/* mas aí tá rolando esse bug de ele já começar vermelho, e eu quero q ele só identifique a invalidação depois do click no submit. Eu acho q isso envolve backend, ou outras coisas ainda no front, mas no js */

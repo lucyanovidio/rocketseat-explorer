@@ -1,0 +1,275 @@
+/* dps ver aqui do rem */
+
+/* uma dúvida que eu tive é q qnd eu to com foco em algum input e dou enter, ele dá submit no formulário, sendo q eu quero qele selecione, tipo o checkbox. Mas pra ele só selecionar eu tenho q apertar o espaço. Como q eu mudo pra enter, pro enter n dar submit? */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 465px;
+
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  background-color: #293241;
+}
+
+body {
+  background-color: #e5e5e5;
+
+  font-family: 'Poppins', sans-serif;
+  color: #4e4958;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.page {
+  width: 750px;
+  margin: 0px auto 392px;
+
+  text-align: center;
+}
+
+.blue-content {
+  height: 465px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* outra forma seria fazendo um padding-top de 107px q é a distancia do h1 pro topo, q eu tinha colocado antes de margin-top do page */
+}
+
+header h1 {
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+header svg {
+  width: 225px;
+  margin: 25px 0 32px;
+}
+
+#form-top {
+  height: 133px;
+
+  background: #f67669;
+  border-radius: 20px 20px 0px 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-top h2 {
+  color: #fff;
+}
+
+#form-top h2,
+legend {
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+form {
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+
+  background-color: #ffffff;
+
+  padding: 32px 64px 64px;
+}
+
+fieldset {
+  border: none;
+}
+
+.input-wrapper,
+.checkbox-wrapper {
+  text-align: left;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form > fieldset:nth-child(2) > .fieldset-wrapper {
+  gap: 32px;
+}
+
+legend {
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 8px;
+
+  margin-bottom: 32px;
+}
+
+form > fieldset:nth-child(1) .col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.input-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+label span {
+  font-size: 12px;
+  line-height: 20px;
+  color: red;
+}
+
+label span.grey {
+  color: #c1bccc;
+
+  transition: 200ms;
+}
+
+label span.grey:hover {
+  color: #797387;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  background-color: #fafafc;
+
+  padding: 15px 20px;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+
+  font-family: 'Poppins', sans-serif;
+  color: #645e72;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-wrapper input {
+  height: 56px;
+}
+
+.input-wrapper textarea {
+  height: 167px;
+}
+
+/* input:invalid,
+textarea:invalid {
+  outline: 1px solid red;
+} */
+
+form > fieldset:nth-child(2) {
+  /* como q eu diria q se eu quisesse me referir ao segundo nível? */
+  margin: 32px 0 36px;
+}
+
+form fieldset:nth-child(2) .fieldset-wrapper div:nth-child(2) {
+  width: 50%;
+}
+/* ????? Eu fiquei colocando sobre o primeiro filho div por horas, div:nth-child(1), porque é oq faz sentido na minha cabeça. Pq q foi sendo o 2???? Não entendi.
+  Na real ele tá considerando o legend como o primeiro filho div, porque se eu tiro o legend do html, funciona de boa. Mas com ele, se eu boto nth-child(1), n pega no legend. Deve ser algum bug, pq o legend tbm tem aquele bug de ser considerado uma caixa dentro do fieldset puro, sem separação. Mas pesquisar algo sobre isso.*/
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper input {
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* isso pra ele ficar por cima do before e a pessoa poder clicar e fazer o check. Até por isso tbm q tem os mesmos width e height */
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+
+  background-color: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 3px solid black;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.col-3 {
+  display: flex;
+  gap: 32px;
+}
+
+.col-3 .col-2 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+/* aqui deu um rolê, né? O lance é a caixa de fora e as de dentro estarem usando 100% dispostas em linha, pq aí elas se dividem no meio certinho da caixa de fora. E oq rolou foi minha falta de atenção por colocar input do tipo date, q ocupava mais espaço q o tipo time, aí fiquei achando q era o width, mas n era */
+
+#submit-button {
+  width: 100%;
+  height: 51px;
+
+  background-color: #f67669;
+
+  border: none;
+  border-radius: 8px;
+
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+
+  margin-top: 64px;
+
+  transition: 200ms;
+}
+
+#submit-button:hover {
+  background-color: #ec5241;
+}

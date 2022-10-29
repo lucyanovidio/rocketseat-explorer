@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!--repare na organização do mayke das coisas aqui no head-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Crie seu evento</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Crie e compartilhe seu evento</h1>
+        <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+      </header>
+      <form id="my-form">
+        <!-- oq q o action faz msm? -->
+        <!-- 
+          fieldset - conjunto de campos. É uma tag semantica pra dizer que ali agt vai ter varios campos dentro do formulário.
+          legend - a legenda desse fieldset. 
+          -->
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <!-- pus tudo nessa div por conta do bug do fieldset q expliquei no css -->
+            <legend>Informações do Evento</legend>
+
+            <div class="input-wrapper">
+              <!-- aí agt usa essa classe pra padronizar como vai ficar a disposição dos elementos de dentro da caixa, pro label ficar em cima e o input ficar embaixo em tds -->
+              <label for="event-title"
+                >Título do evento <span>(mínimo 8 caracteres)</span></label
+              >
+              <input 
+              type="text" 
+              id="event-title"
+              minlength="8" 
+              required />
+              <!-- 
+                required = preenchim. obrigatório
+                minlength = mínimo de caracteres 
+                * Essas são questões de validação. Tem outros pontos de validação que agt vê ainda no front via javascript, mas também tem validação no back quando agt submete o formulário.
+              -->
+              <!-- agt n vai enviar pra lugar nhm então n poe o name -->
+            </div>
+            <div class="input-wrapper">
+              <label for="event-link"
+                >Link do evento <span>(comece com https://)</span></label
+              >
+              <!-- esse é do tipo url e eu n vi diferença aparente, mas deve ser por SEO, ou algo assim -->
+              <input type="url" id="event-link" />
+            </div>
+            <div class="input-wrapper">
+              <label for="event-whatsapp"
+                >Whatsapp para contato <span>(somente numeros)</span></label
+              >
+              <input type="number" id="event-whatsapp" />
+            </div>
+            <div class="input-wrapper">
+              <label for="event-info">Informações extras </label>
+              <textarea id="event-info"></textarea>
+            </div>
+            <div class="input-wrapper">
+              <label for="event-category">Categoria</label>
+              <select id="event-category">
+                <option value="live">Ao vivo</option>
+                <option value="podcast">Podcast</option>
+                <option value="mentorship">Mentoria</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <!-- Aqui fazemos outro fieldset, ainda dentro do form, pra dizer que aqui teremos outro agrupamento de campos, tipo um section dentro do body, pq aqui entra a parte de Privacidade, mas com tudo ainda dentro do nosso wrapper -->
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Privacidade</legend>
+
+            <div class="input-wrapper">
+              <label for="event-email"
+                >Email do administrador
+                <span>(digite um email válido)</span></label
+              >
+              <input type="email" id="event-email" />
+            </div>
+            <div class="input-wrapper">
+              <label for="event-password"
+                >Senha de acesso para os participantes
+                <span>(mínimo 8 caracteres)</span></label
+              >
+              <input type="password" id="event-password" />
+              <!-- A minha caixa de senha n tá ficando com o olhinho pra olhar a senha, nem no chrome***** -->
+            </div>
+            <!-- agt muda esse wrapper pq as props são diferentes, e trocamos a ordem pro input vir antes do texto. Eles são inline então ficam um do lado do outro -->
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="event-private" />
+              <label for="event-private">Evento privado</label>
+            </div>
+          </div>
+        </fieldset>
+        <!-- Fieldset do dia e hora -->
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Dia e hora</legend>
+
+            <!-- agrupamento das 3 coluninhas de data e hora, pro flex row -->
+            <div class="col-3">
+              <!-- ele tinha colocado 3-col antes, mas n é bom começar nome de class/id com número, então ele mudou -->
+              <div class="input-wrapper">
+                <label for="event-date">Data</label>
+                <input type="date" id="event-date" />
+              </div>
+              <div class="input-wrapper">
+                <label for="event-begin">Das</label>
+                <input type="time" id="event-begin" />
+              </div>
+              <div class="input-wrapper">
+                <label for="event-end">Até</label>
+                <input type="time" id="event-end" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Mayke pôs esses botões pra explicar: Qnd agt tem um button dentro de um form, msm q ele n seja um input submit, ele já é visto pelo form como o botão de submit automaticamente. Então, se agt n quiser q ele seja o botão de submeter o form, agt precisa especificar q ele é um botão normal, usando o atributo type com valor button, pra dizer q ele é só um button mesmo. E se agt quiser fazer um button usando um input agt pode, é só usar esse atributo e esse valor de igual forma. (esses fois são pra explicar o caso de, por exemplo, colocarmos um botão de cancelar, q é só um botão normal, ou seja, q n é pra submeter o form, é pra fazer outra coisa)
+        <button type="button">Salvar evento</button>
+        <input type="button" value="Cancelar" /> -->
+      </form>
+      <!-- Existem várias formas de fazer esse botão, com o position absolute mantendo o input dentro do form, entre outras, mas às vezes acontece de precisarmos manter o input type submit fora do form, então ele ensinou pra gnt q nesses casos agt precisa referenciar de qual formulário é esse input type submit, e agt faz isso com o atributo "form" pro input cujo value é um id do form que agt quer referenciar -->
+      <footer>
+        <input 
+        class="button" 
+        type="submit" 
+        form="my-form" 
+        value="Salvar evento" />
+      </footer>
+      <!-- da msm forma, agt poderia ter um button aqui com o atributo form e o id do form do qual agt ta falando, e ele ia servir como submit, tipo
+      <button form="my-form">Salvar evento</button> -->
+    </div>
+  </body>
+</html>
