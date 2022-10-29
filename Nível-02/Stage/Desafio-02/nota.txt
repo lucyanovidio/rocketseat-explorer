@@ -1,1 +1,0 @@
-* Deu bug nesse lance de height q eu sempre me enrolo. N ta ficando certo, fica adicionando rolagem. Aconteceu isso tbm no desafio 1 e no maratona explorer.
