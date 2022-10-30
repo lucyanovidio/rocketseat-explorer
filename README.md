@@ -25,7 +25,7 @@ Neste repositório estão os projetos que venho desenvolvendo ao longo da minha 
 
 ## Meu Status
 
-📚 **Cursando**
+`📚 **Cursando**`
 
 <br>
 
