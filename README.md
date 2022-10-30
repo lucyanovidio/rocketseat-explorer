@@ -2,8 +2,8 @@
 
 ## 🤔 O que é?
 
-O programa [Explorer](https://rocketseat.com.br/explorer) da [Rocketseat](https://rocketseat.com.br) é uma jornada de ensino de desenvolvimento Full Stack, baseado no método 7-2-1 (70% coding, 20% networking, 10% branding), tendo conteúdos e desafios voltados para o desenvolvimento pessoal em cada um dos pontos, de ***Hard Skills*** às ***Soft Skills***. <br>
-Neste repositório estão os projetos que venho desenvolvendo ao longo da minha trajetória de estudos no Explorer.
+O programa [Explorer](https://rocketseat.com.br/explorer) da [Rocketseat](https://rocketseat.com.br) é uma jornada de aprendizado no desenvolvimento Full Stack, baseado no método 7-2-1 (70% coding, 20% networking, 10% branding), tendo conteúdos e desafios voltados para o desenvolvimento pessoal em cada um desses pontos, das ***Hard Skills*** às ***Soft Skills***. <br>
+Neste repositório estou colocando os projetos que venho desenvolvendo ao longo da minha trajetória no programa.
 
 > Repositório em construção.
 
@@ -25,9 +25,7 @@ Neste repositório estão os projetos que venho desenvolvendo ao longo da minha 
 
 ## Meu Status
 
-`📚 **Cursando**`
-
-<br>
+`📚 Cursando`
 
 ---
 
