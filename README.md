@@ -31,15 +31,15 @@ Neste repositório estou colocando os projetos que venho desenvolvendo ao longo 
 
 ### Stage 02
 
-🔸 [Desafio 1 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-02/Stage/Desafio-01/) <br>
-🔸 [Desafio 2 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-02/Stage/Desafio-02/) <br>
-🔸 [Desafio 3 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-02/Stage/Desafio-03/) <br>
-🔸 [Desafio 4 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-02/Stage/Desafio-04/) <br>
+🔸 [Desafio 1 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-02/stage/desafio-01/) <br>
+🔸 [Desafio 2 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-02/stage/desafio-02/) <br>
+🔸 [Desafio 3 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-02/stage/desafio-03/) <br>
+🔸 [Desafio 4 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-02/stage/desafio-04/) <br>
 
 ### Stage 03
 
-🔸 [Desafio 1 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-03/Stage/Fase-01/Desafio-01/) <br>
-🔸 [Desafio 2 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-03/Stage/Fase-01/Desafio-02/)
+🔸 [Desafio 1 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-03/stage/fase-01/desafio-01/) <br>
+🔸 [Desafio 2 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-03/stage/fase-01/desafio-02/)
 
 ---
 
