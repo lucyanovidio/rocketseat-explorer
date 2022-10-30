@@ -1,11 +1,15 @@
 # Programa Explorer - Rocketseat 🚀
 
+> Repositório em construção.
+
 ## 🤔 O que é?
 
 O programa [Explorer](https://rocketseat.com.br/explorer) da [Rocketseat](https://rocketseat.com.br) é uma jornada de aprendizado no desenvolvimento Full Stack, baseado no método 7-2-1 (70% coding, 20% networking, 10% branding), tendo conteúdos e desafios voltados para o desenvolvimento pessoal em cada um desses pontos, das ***Hard Skills*** às ***Soft Skills***. <br>
 Neste repositório estou colocando os projetos que venho desenvolvendo ao longo da minha trajetória no programa.
 
-> Repositório em construção.
+## Meu Status
+
+`📚 Cursando`
 
 ## 🧠 Tecnologias estudadas
 
@@ -23,9 +27,21 @@ Neste repositório estou colocando os projetos que venho desenvolvendo ao longo 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" height="40" width="52" alt="heroku logo"   />
 </div>
 
-## Meu Status
+## 🎯 Concluídos
 
-`📚 Cursando`
+### Stage 02
+
+🔸 [Desafio 1 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-02/Stage/Desafio-01/) <br>
+🔸 [Desafio 2 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-02/Stage/Desafio-02/) <br>
+🔸 [Desafio 3 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-02/Stage/Desafio-03/) <br>
+🔸 [Desafio 4 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-02/Stage/Desafio-04/) <br>
+
+### Stage 03
+
+🔸 [Desafio 1 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-03/Stage/Desafio-01/) <br>
+🔸 [Desafio 2 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-03/Stage/Desafio-02/) <br>
+🔸 [Desafio 3 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-03/Stage/Desafio-03/) <br>
+🔸 [Desafio 4 - Deploy](https://lucyanovidio.github.io/rocketseat-explorer/Nível-03/Stage/Desafio-04/)
 
 ---
 
