@@ -57,6 +57,3 @@ Neste repositório estou colocando os projetos que venho desenvolvendo ao longo 
     </td>
   </tr>
 </table>
-
-
-🤣 teste
