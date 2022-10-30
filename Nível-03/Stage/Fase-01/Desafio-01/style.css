@@ -19,7 +19,6 @@ body::before {
 body {
   width: 100%;
   height: 100%;
-  /* Por que mesmo que tem q por isso? */
 
   background-color: #e5e5e5;
 }
@@ -128,7 +127,6 @@ label span.grey {
   transition: 200ms;
 }
 
-/* acessibilidade */
 label span.grey:hover {
   color: #5e5b63;
 }
@@ -146,11 +144,6 @@ input {
   border: 1px solid #e6e6f0;
   border-radius: 8px;
 }
-
-/* input:invalid {
-  outline: 1px solid red;
-} */
-/* Eu n to entendendo pq já começa ficando vermelho. É pq como começa sem ter as coisas dentro dos inputs ele dá como invalido. Essa prop tem que rolar depois que agt dá o salvar, mas n sei como fazer isso */
 
 .little-fieldset .fieldset-wrapper .col-3 {
   display: flex;
@@ -183,8 +176,6 @@ footer {
 }
 
 footer button {
-  /* width: 100%; */
-  /* Primeiro eu usei assim. Aí dps tentei com o display flex no footer, com flex direction column pra ele esticar, o rolê q eu n tinha entendido, mas os dois funcionaram */
   height: 56px;
 
   display: flex;
