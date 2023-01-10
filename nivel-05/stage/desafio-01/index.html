@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Biscoito da Sorte</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Dancing+Script&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="screen1 ">
+        <h1>Qual é a sua sorte hoje?</h1>
+        <p>Abra o biscoito e descubra!</p>
+
+        <img
+          id="closed_cookie"
+          src="./assets/imagem-de-biscoito-chines-da-sorte-fechado.png"
+          alt="Imagem de um biscoito chinês da sorte fechado."
+        />
+      </div>
+      <div class="screen2 hide">
+        <h2>Aqui está a sua sorte de hoje:</h2>
+        <p id="fortune_text"></p>
+        <img
+          src="./assets/imagem-de-biscoito-chines-da-sorte-aberto.png"
+          alt="Imagem de um biscoito chinês da sorte aberto."
+        />
+        <button>Abrir outro biscoito</button>
+      </div>
+    </main>
+  </body>
+</html>
