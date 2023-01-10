@@ -47,6 +47,10 @@ Neste repositório estou colocando os projetos que venho desenvolvendo ao longo 
 🔸 Desafio 1 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-04/stage/desafio-01/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-04/stage/desafio-01) <br>
 🔸 Desafio 2 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-04/stage/desafio-02/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-04/stage/desafio-02)
 
+### Stage 05
+
+🔸 Desafio 1 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-05/stage/desafio-01/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-01)
+
 ---
 
 <table>
