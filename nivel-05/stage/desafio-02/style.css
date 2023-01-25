@@ -1,0 +1,162 @@
+/* GLOBAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --text-color: #34355B;
+    --font-size-1: clamp(1rem, 1.5rem + 1vw, 2.4rem);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(210deg, #BB00FF 0%, #190361 100%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: clamp(1rem, 1.1rem + 1vw, 1.6rem);
+}
+
+.hide {
+    display: none;
+}
+
+/* MAIN */
+
+main {
+    width: min(42.8rem, 90%);
+    
+    padding: 4.8rem 6.4rem 6.4rem;
+    
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 2rem 5rem 0 #000;
+
+    text-align: center;
+}
+
+/* SCREEN 1 */
+
+.screen1 h1,
+.screen2 h2 {    
+    margin-inline: auto;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--font-size-1);
+    line-height: 2.9rem;
+    color: var(--text-color);
+}
+
+.screen1 h1 {
+    max-width: 25.8rem;
+}
+
+.screen1 p {
+    margin: 1.4rem 0 2rem;
+
+    color: var(--text-color);
+    line-height: 2rem;
+}
+
+.screen1 img {
+    width: min(30rem, 100%);
+    min-width: 8.5rem;
+}
+
+.screen1 img:hover {
+    animation: animated_cookie 300ms infinite backwards;
+    cursor: pointer;
+}
+
+@keyframes animated_cookie {
+    0% { transform: translate(0) rotate(-1deg); }
+    20% { transform: translate(-.3rem, -.3rem) rotate(1deg); }
+    40% { transform: translate(.3rem, -.3rem) rotate(-2deg); }
+    60% { transform: translate(.3rem, .3rem) rotate(1deg); }
+    80% { transform: translate(-.3rem, .3rem) rotate(-1deg); }
+    100% { transform: translate(0) rotate(2deg); }
+}
+
+/* SCREEN 2 */
+
+.screen2 {
+    position: relative;
+}
+
+.screen2 #fortune_text {
+    position: absolute;
+    top: 8rem;
+    
+    animation: text_appearing 1.5s backwards;
+    padding: 1rem;
+
+    box-shadow: .2rem .2rem rgba(85, 85, 85, 0.5);
+    background-color: #fff;
+
+    font-family: 'Dancing Script', cursive;
+    font-size: var(--font-size-1);
+    line-height: 2.8rem;
+    color: #000;
+}
+
+@keyframes text_appearing {
+    from {
+        transform: translateY(15rem) scale(.1);
+    }
+    to {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.screen2 img {
+    width: min(30rem, 90%);
+    height: min(11.5rem, 100%);
+
+    min-width: 5.6rem;
+
+    margin: 18.4rem 0 5.9rem 0;
+}
+
+.screen2 button {
+    font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
+    line-height: 2rem;
+    color: #fff;
+
+    background-color: #FF9500;
+    border: none;
+    border-radius: .4rem;
+
+    padding: 1.6rem;
+
+    transition: 400ms;
+}
+
+.screen2 button:hover {
+    background-color: #ca7600;
+    cursor: pointer;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 320px) {
+    .screen2 #fortune_text {
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    main {
+        padding: 4.8rem 3rem 6.4rem;
+    }
+}

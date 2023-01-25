@@ -1,17 +1,17 @@
 # Programa Explorer - Rocketseat 🚀
 
-> Repositório em construção.
+**Status: `Cursando 🕔`**
 
 ## 🤔 O que é?
 
-O programa [Explorer](https://rocketseat.com.br/explorer) da [Rocketseat](https://rocketseat.com.br) é uma jornada de aprendizado no desenvolvimento Full Stack, baseado no método 7-2-1 (70% coding, 20% networking, 10% branding), tendo conteúdos e desafios voltados para o desenvolvimento pessoal em cada um desses pontos, das ***Hard Skills*** às ***Soft Skills***. <br>
-Neste repositório estou colocando os projetos que venho desenvolvendo ao longo da minha trajetória no programa.
+O programa [Explorer](https://rocketseat.com.br/explorer) da [Rocketseat](https://rocketseat.com.br) é uma jornada de aprendizado no desenvolvimento Full Stack, baseado no método 7-2-1 (70% coding, 20% networking, 10% branding), tendo conteúdos e desafios voltados para o desenvolvimento pessoal em cada um desses pontos. Os ***Stages*** em cada nível abordam ***Hard Skills***, enquanto ***Lands*** abordam ***Soft Skills***. 
 
-## Meu Status
+Por meio dele estou na jornada para me tornar um desenvolvedor web. 🤓 <br>
+Neste repositório estou documentando minha trajetória no programa, deixando anotações do meu aprendizado e principalmente os projetos que venho desenvolvendo ao longo dele. 
 
-`📚 Cursando`
+Não deixe de deixar uma estrelinha pro amigo aqui. 😁🌟
 
-## 🧠 Tecnologias estudadas
+## 🛠 Tecnologias estudadas
 
 <div>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" width="52" alt="vscode logo"/>
@@ -27,29 +27,34 @@ Neste repositório estou colocando os projetos que venho desenvolvendo ao longo 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" height="40" width="52" alt="heroku logo"   />
 </div>
 
-## 🎯 Concluídos
+## ⚙ Projetos
 
-### Stage 02
+O programa é dividido em níveis, do 1 ao 11, indo do básico, com conceitos da Web, HTML e CSS, até front-end com ReactJS, back-end com NodeJS e testes automatizados com Jest.
+Você pode conferir os projetos e minhas anotações de cada conteúdo nos diretórios de cada nível, ou por aqui: <br>
 
-🔸 Desafio 1 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-02/stage/desafio-01/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-02/stage/desafio-01) <br>
-🔸 Desafio 2 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-02/stage/desafio-02/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-02/stage/desafio-02) <br>
-🔸 Desafio 3 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-02/stage/desafio-03/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-02/stage/desafio-03) <br>
-🔸 Desafio 4 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-02/stage/desafio-04/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-02/stage/desafio-04) <br>
+<table align="center">
+  <tr>
+    <td>Nível 1</td>
+    <td><a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-02/">Nível 2</a></td>
+    <td><a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-03/">Nível 3</a></td>
+    <td><a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-04/">Nível 4</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/">Nível 5</a></td>
+    <td>Nível 6</td>
+    <td>Nível 7</td>
+    <td>Nível 8</td>
+  </tr>
+  <tr>
+    <td>Nível 9</td>
+    <td>Nível 10</td>
+    <td>Nível 11</td>
+    <td></td>
+  </tr>
+</table>
+<br>
 
-### Stage 03
-
-🔸 Desafio 1 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-03/stage/fase-01/desafio-01/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-03/stage/fase-01/desafio-01) <br>
-🔸 Desafio 2 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-03/stage/fase-01/desafio-02/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-03/stage/fase-01/desafio-02) <br>
-🔸 Desafio 3 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-03/stage/fase-02/desafio-03/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-03/stage/fase-02/desafio-03)
-
-### Stage 04
-
-🔸 Desafio 1 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-04/stage/desafio-01/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-04/stage/desafio-01) <br>
-🔸 Desafio 2 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-04/stage/desafio-02/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-04/stage/desafio-02)
-
-### Stage 05
-
-🔸 Desafio 1 - [Deploy](https://lucyanovidio.github.io/rocketseat-explorer/nivel-05/stage/desafio-01/) / [Repositório](https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-01)
+> Se ver algum bug ou tiver uma dica pra mim, pode me chamar no [LinkedIn](https://linkedin.com/in/lucyanovidio)! 😉
 
 ---
 

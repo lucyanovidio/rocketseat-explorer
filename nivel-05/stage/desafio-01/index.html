@@ -8,10 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Biscoito da Sorte</title>
+    <title>Jogo da Advinhação</title>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Dancing+Script&family=Montserrat:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
@@ -20,23 +20,19 @@
   <body>
     <main>
       <div class="screen1 ">
-        <h1>Qual é a sua sorte hoje?</h1>
-        <p>Abra o biscoito e descubra!</p>
+        <h1>Jogo da Advinhação</h1>
+        <p>Advinhe o número de 0 a 10</p>
 
-        <img
-          id="closed_cookie"
-          src="./assets/imagem-de-biscoito-chines-da-sorte-fechado.png"
-          alt="Imagem de um biscoito chinês da sorte fechado."
-        />
+        <form>
+          <input type="number" />
+          <button>Tentar</button>
+        </form>
+
+        <p class="incorrect_answer hide">Errou. Tente de novo.</p>
       </div>
       <div class="screen2 hide">
-        <h2>Aqui está a sua sorte de hoje:</h2>
-        <p id="fortune_text"></p>
-        <img
-          src="./assets/imagem-de-biscoito-chines-da-sorte-aberto.png"
-          alt="Imagem de um biscoito chinês da sorte aberto."
-        />
-        <button>Abrir outro biscoito</button>
+        <h2></h2>
+        <button>Jogar novamente</button>
       </div>
     </main>
   </body>
