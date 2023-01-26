@@ -6,7 +6,7 @@
 
 ## 💻 O desafio
 
-Formulário de avaliação de mentoria é um formulário fictício para avaliação de uma mentoria. Pratiquei nele o que aprndi anteriormente.
+Formulário de avaliação de mentoria é um formulário fictício para avaliação de uma mentoria. Pratiquei nele o que aprendi anteriormente.
 
 ## 🎨 Layout do projeto
 

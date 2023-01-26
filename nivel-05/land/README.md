@@ -1,3 +1,0 @@
-# Anotações land
-
-> Em construção

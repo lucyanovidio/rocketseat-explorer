@@ -6,7 +6,7 @@
 
 ## 💻 O desafio
 
-Criamos a mesma página do <a href="">desafio 2</a>, porém nos foi dado um arquivo com bugs e precisamos corrigi-los. O resultado é o que segue aqui, a página corrigida. Nesse projeto aprendi mais sobre:
+Criamos a mesma página do <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-02/stage/desafio-02">desafio 2</a>, porém nos foi dado um arquivo com bugs e precisamos corrigi-los. O resultado é o que segue aqui, a página corrigida. Nesse projeto aprendi mais sobre:
 * Flexbox;
 * Introdução a acessibilidade.
 

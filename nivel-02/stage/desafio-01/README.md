@@ -37,7 +37,11 @@ Este é o <a href="https://www.figma.com/file/dZwREQYzGOFsCjEoObp5Mx/Explorer---
       <img src="https://github.com/lucyanovidio.png" width="100px" />
     </td>
     <td>
-      Feito por <a href="https://github.com/lucyanovidio">Lucyan Ovídio.</a> 🙋🏿‍♂️
+      <img src="https://github.com/rocketseat-education.png" width="100px" />
+    </td>
+    <td>
+      Feito por <a href="https://github.com/lucyanovidio">Lucyan Ovídio</a> 🙋🏿‍♂️
+      <br> Junto com <a href="https://rocketseat.com.br">Rocketseat</a> 🚀.
     </td>
   </tr>
 </table>
