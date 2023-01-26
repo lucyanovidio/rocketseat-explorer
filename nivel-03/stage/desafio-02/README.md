@@ -1,8 +1,8 @@
 # Desafio 2 - Formulário de avaliação de mentoria ✅
 
-<img src="./.github/preview-desafio-01.jpg" alt="Preview do projeto." />
+<img src="./.github/preview-desafio-02.jpg" alt="Preview do projeto." />
 
-* <a href="https://lucyanovidio.github.io/rocketseat-explorer/nivel-03/stage/desafio-01/">Acesse aqui.</a>
+* <a href="https://lucyanovidio.github.io/rocketseat-explorer/nivel-03/stage/desafio-02/">Acesse aqui.</a>
 
 ## 💻 O desafio
 
@@ -10,7 +10,7 @@ Formulário de avaliação de mentoria é um formulário fictício para avaliaç
 
 ## 🎨 Layout do projeto
 
-Este é o <a href="https://www.figma.com/file/Nws1KWB7DyXBw8L6wXb9mp/Stage-03---Formul%C3%A1rio-intermedi%C3%A1rio/duplicate">layout do projeto</a> no Figma.
+Este é o <a href="https://www.figma.com/file/fnZyJHs7eqNFAA7tUrKcsD/Stage-03---Formul%C3%A1rio-avan%C3%A7ado/duplicate">layout do projeto</a> no Figma.
 
 ## 🛠 Tecnologias
 

@@ -2,7 +2,7 @@
 
 **Status: `Cursando 🕔`**
 
-## 🤔 O que é?
+## O que é?
 
 O programa [Explorer](https://rocketseat.com.br/explorer) da [Rocketseat](https://rocketseat.com.br) é uma jornada de aprendizado no desenvolvimento Full Stack, baseado no método 7-2-1 (70% coding, 20% networking, 10% branding), tendo conteúdos e desafios voltados para o desenvolvimento pessoal em cada um desses pontos. Os ***Stages*** em cada nível abordam ***Hard Skills***, enquanto ***Lands*** abordam ***Soft Skills***. 
 
@@ -11,7 +11,7 @@ Neste repositório estou documentando minha trajetória no programa, deixando an
 
 Não deixe de deixar uma estrelinha pro amigo aqui. 😁🌟
 
-## 🛠 Tecnologias estudadas
+## Tecnologias estudadas
 
 <div>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" width="52" alt="vscode logo"/>
@@ -27,7 +27,7 @@ Não deixe de deixar uma estrelinha pro amigo aqui. 😁🌟
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" height="40" width="52" alt="heroku logo"   />
 </div>
 
-## ⚙ Projetos
+## Projetos
 
 O programa é dividido em níveis, do 1 ao 11, indo do básico, com conceitos da Web, HTML e CSS, até front-end com ReactJS, back-end com NodeJS e testes automatizados com Jest.
 Você pode conferir os projetos e minhas anotações de cada conteúdo nos diretórios de cada nível, ou por aqui: <br>

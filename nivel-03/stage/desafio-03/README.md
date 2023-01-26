@@ -1,8 +1,8 @@
 # Desafio 3 - Space Cream ✅
 
-<img src="./.github/preview-desafio-01.jpg" alt="Preview do projeto." />
+<img src="./.github/preview-desafio-03.jpg" alt="Preview do projeto." />
 
-* <a href="https://lucyanovidio.github.io/rocketseat-explorer/nivel-03/stage/desafio-01/">Acesse aqui.</a>
+* <a href="https://lucyanovidio.github.io/rocketseat-explorer/nivel-03/stage/desafio-03/">Acesse aqui.</a>
 
 ## 💻 O desafio
 
