@@ -1,4 +1,4 @@
-# 💻 Fundamentos da programação Web - Stage 2
+# 💻 Stage 1 - Fundamentos da programação Web
 
 **Status: `Concluído ✅`**
 
@@ -8,3 +8,4 @@
 
 > Por ser introdutório, o módulo 1 foi puramente conceitual. Minhas anotações seguem abaixo.
 
+**...**

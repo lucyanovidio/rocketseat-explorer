@@ -50,7 +50,7 @@ São funções chamadas dentro de funções, de fato "chamadas de volta", como o
 * Variáveis e funções o mais semânticas possíveis;
 * Optar por criar funções ou variáveis que retornam valor booleano de forma separada, para depois colocar como escutador, ou em uma condicional, por exemplo.
 
-> Casos aplicados no projeto <a href="">Jogo da Advinhação</a>.
+> Casos aplicados no projeto <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-01">Jogo da Advinhação</a>.
 
 ### ...
 
