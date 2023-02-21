@@ -50,7 +50,7 @@ São funções chamadas dentro de funções, de fato "chamadas de volta", como o
 
 ### Objeto literal
 
-É um objeto que contém exatamente o que a gente passa logo de cara, criando a partir de {}, e não assim: `objeto = new Object()` - usamos para fazer estruturação de dados, como no <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/">desafio 3</a> com o <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/js/modal.js">modal</a> e o <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/js/errorAlert.js">error alert</a>.
+É um objeto que contém exatamente o que a gente passa logo de cara, criando a partir de `{ }`, e não com `new Object()` - usamos para fazer estruturação de dados, como no <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/">desafio 3</a> com o <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/js/modal.js">modal</a> e o <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/js/errorAlert.js">error alert</a>.
 
 ### Funções utilitárias
 
@@ -182,7 +182,8 @@ O conceito de modularizar é justamente separar em módulos, separa em diferente
 * Regra do escoteiro: sempre melhore/refatore o código quando pegar nele. Sempre vai ter algo pra melhorar. (segundo Bob, mais de 80% da vida do programador é refatorando, seja no desenvolvimento, seja na manutenção de um determinado projeto);
 * Em um caso em que precisei jogar na tela uma mensagem, precisei fazer várias ações apra isso. Então, por serem várias, a ideia foi agrupar num lugar só e dar um nome pra isso. Depois só chamar a função com esse nome que resume todo o ato e show de bola, ficou melhor pra entender. **Lembra sempre que é sobre isso:** se dá pra juntar tudo que tá relacionado em um único lugar e dar um nome semântico pra essa parada, faça, porque vai ficar melhor de entender o que está acontecendo depois.
 * Agrupar metódos dentro de um <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/js/modal.js">objeto literal</a> quando convir é uma ideia de juntar tudo em um único lugar, "responsável" pelas ações relacionadas a determinado elemento - que dá nome ao objeto. Para métodos de abrir e fechar modal por exemplo, manipulando a DOM por classe CSS. Porque chamar `Modal.open()` deixa muito mais claro o que tá acontecendo do que `modal.classList.add("open")` e etc. Deixa mais limpo, entendível e manutenível;
-* Modularizar separarando em arquivos com nomes semânticos também
+* Modularizar separarando em arquivos com nomes semânticos também;
+* Funções utilitárias pra reduzir uso de if/else (retornando true ou false pra mais de uma coisa, daí eu passo só essa função como condicional, e fica 1 if só)
 
 > OBS.: 
 > - DICA 1: Comece com funçõeszonas mesmo, grandes, com tudo o que você precisa fazer. Depois vc vai refatorando fazendo funções menores, criando lógicas de agrupamento de métodos e estrutura de dados como foi para o modal e alert error, melhorando semântica de variáveis e etc. Só depois de fazer td q agt entende o que realmente vai ser necessário e vai ter sentido de ser feito.
