@@ -14,6 +14,7 @@ A Calculadora de IMC calcula com base no peso e altura fornecidos. Covertendo a 
 * Refatoração.
 
 Além do que é feito em aula, apliquei algumas outras ideias ao projeto:
+* Classificação a partir do IMC;
 * Uso de classes utilitárias para CSS;
 * Fechar modal com clique no backdrop;
 * Limpeza de campos;
