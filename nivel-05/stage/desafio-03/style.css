@@ -20,9 +20,9 @@
   --label-color: #00453a;
 
   --input-text-color: #212529;
-  --input-placeholder-color: rgba(73, 80, 87, 0.5);
+  --input-placeholder-color: rgba(73 80 87 / .5);
   --input-bg-color: #dce2e9;
-  --input-border-color: rgba(73, 80, 87, 0.3);
+  --input-border-color: rgba(73 80 87 / .3);
 
   --button-bg-hover: #015771;
   --error-bg-color: #f03e3e;
@@ -45,7 +45,7 @@ body {
 
 body * {
   line-height: 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--text-fs);
 }
 
@@ -122,10 +122,10 @@ input:focus {
 form button {
   border: none;
   background-color: var(--primary-color);
-  
+
   align-items: center;
   gap: .8rem;
-  
+
   color: var(--secondary-color);
   font-weight: 700;
 
@@ -152,7 +152,7 @@ form button:hover {
 
   position: absolute;
   inset: 0;
-  
+
   align-items: center;
 }
 
@@ -207,6 +207,6 @@ form button:hover {
 
 @media (max-width: 340px) {
   .card {
-      padding: 4rem 4rem 5rem;
+    padding: 4rem 4rem 5rem;
   }
 }
