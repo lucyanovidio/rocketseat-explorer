@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calculadora de IMC</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./js/main.js" defer></script>
+  </head>
+  <body class="flex flex-column">
+    <div class="error-alert flex">Digite somente números</div>
+    <main class="card">
+        <form class="flex flex-column">
+          <h1 class="title">Cálculo de IMC</h1>
+        <div class="inputs-container flex flex-column">
+          <div class="input-wrapper flex flex-column">
+            <label for="weight">Peso (kg)</label>
+            <input type="number" id="weight" placeholder="60" />
+          </div>
+          <div class="input-wrapper flex flex-column">
+            <label for="height">Altura (cm)</label>
+            <input type="number" id="height" placeholder="60" />
+          </div>
+        </div>
+        <button class="flex">
+          Calcular IMC
+          <img src="./assets/arrow.svg" alt="Seta para direita" />
+        </button>
+      </form>
+    </main>
+    <div class="modal-backdrop flex flex-column">
+      <div class="modal card flex">
+        <button class="close-button">
+          <img src="./assets/close-icon.svg" alt="Ícone de X para fechar o modal" />
+        </button>
+        <h2 class="title"></h2>
+      </div>
+    </div>
+  </body>
+</html>
