@@ -1,6 +1,6 @@
 # Desafio 3 - Calculadora de IMC ✅
 
-<img src="./.github/preview-desafio-03.jpg" alt="Preview do projeto." />
+<img src="./.github/preview-desafio-03.gif" alt="Preview do projeto." />
 
 * <a href="https://lucyanovidio.github.io/rocketseat-explorer/nivel-05/stage/desafio-03/">Acesse aqui.</a>
 
