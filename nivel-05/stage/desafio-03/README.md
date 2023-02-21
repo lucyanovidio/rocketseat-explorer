@@ -2,7 +2,7 @@
 
 <img src="./.github/preview-desafio-03.jpg" alt="Preview do projeto." />
 
-* <a href="https://lucyanovidio.github.io/rocketseat-explorer/nivel-05/stage/desafio-02/">Acesse aqui.</a>
+* <a href="https://lucyanovidio.github.io/rocketseat-explorer/nivel-05/stage/desafio-03/">Acesse aqui.</a>
 
 ## 💻 O desafio
 
@@ -11,9 +11,9 @@ A Calculadora de IMC calcula com base no peso e altura fornecidos. Covertendo a 
 * ES Modules - import e export;
 * Semântica em JavaScript;
 * Boas práticas;
-* Refatoração;
+* Refatoração.
 
-Além do que é feito em aula, apliquei algumas outras coisas ao projeto:
+Além do que é feito em aula, apliquei algumas outras ideias ao projeto:
 * Uso de classes utilitárias para CSS;
 * Fechar modal com clique no backdrop;
 * Limpeza de campos;
