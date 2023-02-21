@@ -1,5 +1,3 @@
-// extra: começar com foco, clicar no backdrrop pra fechar, limpeza dos campos, melhoria de nome de variáveis, classes utilitárias, responsividade
-
 import { modal } from "./modal.js";
 import { errorAlert } from "./errorAlert.js";
 import { calculateIMC, rankIMC, isInvalidEntry } from "./utils.js";
