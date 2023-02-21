@@ -176,6 +176,10 @@ form button:hover {
   transform: scale(1.2);
 }
 
+.modal .title {
+  text-align: center;
+}
+
 /* ERROR ALERT */
 
 .error-alert.open {

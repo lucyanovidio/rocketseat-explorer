@@ -37,8 +37,8 @@ function handleSubmit(e) {
   inputHeight.value = "";
 }
 
-function displayResultMessage(result) {
-  const message = `Seu IMC é de ${result}`;
+function displayResultMessage(result, ranking) {
+  const message = `Seu IMC é de ${result}: ${ranking}`;
   modal.message.innerText = message;
   modal.open();
 }
