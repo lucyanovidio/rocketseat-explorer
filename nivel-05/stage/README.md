@@ -10,7 +10,7 @@ Nele foram desenvolvidos 4 projetos para prática desses conceitos:
 
 * <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-01">1. Jogo da adivinhação</a>
 * <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-02">2. Biscoito da sorte</a>
-* <a href="">3. Calculadora de IMC</a>
+* <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03">3. Calculadora de IMC</a>
 * <a href="">4. Focus Timer (Pomodoro)</a>
 
 Deixei minhas anotações pessoais aqui:
