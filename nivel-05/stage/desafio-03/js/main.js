@@ -2,7 +2,7 @@
 
 import { modal } from "./modal.js";
 import { errorAlert } from "./errorAlert.js";
-import { calculateIMC, isInvalidEntry } from "./utils.js";
+import { calculateIMC, rankIMC, isInvalidEntry } from "./utils.js";
 
 const form = document.querySelector("form");
 const inputWeight = document.querySelector("#weight");
@@ -11,31 +11,34 @@ const inputHeight = document.querySelector("#height");
 inputWeight.focus();
 
 inputWeight.addEventListener("input", errorAlert.close);
-inputHeight.addEventListener("input", errorAlert.close);    
+inputHeight.addEventListener("input", errorAlert.close);
 form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    const weight = inputWeight.value;
-    const height = inputHeight.value;
+  const weight = inputWeight.value;
+  const height = inputHeight.value;
 
-    const isWeightOrHeightAnInvalidEntry = isInvalidEntry(weight) || isInvalidEntry(height);
+  const isWeightOrHeightAnInvalidEntry =
+    isInvalidEntry(weight) || isInvalidEntry(height);
 
-    if (isWeightOrHeightAnInvalidEntry) {
-        errorAlert.open();
-        return;
-    }
+  if (isWeightOrHeightAnInvalidEntry) {
+    errorAlert.open();
+    return;
+  }
 
-    const result = calculateIMC(weight, height);
-    displayResultMessage(result);
+  const result = calculateIMC(weight, height);
+  const ranking = rankIMC(Number(result));
 
-    inputWeight.value = "";
-    inputHeight.value = "";
+  displayResultMessage(result, ranking);
+
+  inputWeight.value = "";
+  inputHeight.value = "";
 }
 
 function displayResultMessage(result) {
-    const message = `Seu IMC é de ${result}`;
-    modal.message.innerText = message;
-    modal.open();
+  const message = `Seu IMC é de ${result}`;
+  modal.message.innerText = message;
+  modal.open();
 }
