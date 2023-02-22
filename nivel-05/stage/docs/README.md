@@ -44,13 +44,9 @@ function sayYouClicked() {
 
 São funções chamadas dentro de funções, de fato "chamadas de volta", como o nome sugere. As funções passadas como argumento no método citado acima são funções callback.
 
----
-
-<!-- DEPOIS DO PROJETO DA CALCULADORA -->
-
 ### Objeto literal
 
-É um objeto que contém exatamente o que a gente passa logo de cara, criando a partir de `{ }`, e não com `new Object()` - usamos para fazer estruturação de dados, como no <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/">desafio 3</a> com o <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/js/modal.js">modal</a> e o <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/js/errorAlert.js">error alert</a>.
+O objeto literal - *object literal* - é um objeto que contém exatamente o que a gente passa logo de cara, criando a partir de `{ }`, e não com `new Object()` - usamos para fazer estruturação de dados, como no <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/">desafio 3</a> com o <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/js/modal.js">modal</a> e o <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/js/errorAlert.js">error alert</a>.
 
 ### Funções utilitárias
 
@@ -171,16 +167,15 @@ O conceito de modularizar é justamente separar em módulos, separa em diferente
 
 * Agrupar iguais com iguais no código (variáveis juntas, eventos, criação de funções, etc);
 * Variáveis e funções o mais semânticas possíveis, não importa se o nome ficar grande;
-* Optar por criar funções ou variáveis que retornam valor booleano de forma separada, para depois colocar como escutador, ou em uma condicional, por exemplo.
+* Optar por criar funções ou variáveis que retornam valor booleano de forma separada, para depois colocar em uma condicional, por exemplo.
 
 > Dicas aplicadas no projeto <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03">Calculadora de IMC</a>.
 
-* Não importa se a variável ficar grande, deixe semântica;
 * Funções enchutas e específicas;
 * Evitar comentários desnecessários, como dizendo quais são as variáveis, quais os eventos e etc. O ideal é o código estar limpo e entendível ao ponto de estas coisas serem percebidas com facilidade e não precisarem ser comentadas;
 * **Limpar e encurtar código != só diminuir linhas**: Diminuir linhas é ótimo, mas não é o mesmo que ter código limpo se não dá pra entender a lógica. Pense em encurtar, mas de repente **atribuindo a uma variavel/função com nome semântico** pra dar pra entender, ou **usar mais funções prototype**, como a própria isNaN;
 * Regra do escoteiro: sempre melhore/refatore o código quando pegar nele. Sempre vai ter algo pra melhorar. (segundo Bob, mais de 80% da vida do programador é refatorando, seja no desenvolvimento, seja na manutenção de um determinado projeto);
-* Em um caso em que precisei jogar na tela uma mensagem, precisei fazer várias ações apra isso. Então, por serem várias, a ideia foi agrupar num lugar só e dar um nome pra isso. Depois só chamar a função com esse nome que resume todo o ato e show de bola, ficou melhor pra entender. **Lembra sempre que é sobre isso:** se dá pra juntar tudo que tá relacionado em um único lugar e dar um nome semântico pra essa parada, faça, porque vai ficar melhor de entender o que está acontecendo depois.
+* Em um caso em que precisei jogar na tela uma mensagem, precisei fazer várias ações para isso. Então, por serem várias, a ideia foi agrupar num lugar só e dar um nome pra isso. Depois só chamar a função com esse nome que resume todo o ato e show de bola, ficou melhor pra entender. **Lembra sempre que é sobre isso:** se dá pra juntar tudo que tá relacionado em um único lugar e dar um nome semântico pra essa parada, faça, porque vai ficar melhor de entender o que está acontecendo depois.
 * Agrupar metódos dentro de um <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/stage/desafio-03/js/modal.js">objeto literal</a> quando convir é uma ideia de juntar tudo em um único lugar, "responsável" pelas ações relacionadas a determinado elemento - que dá nome ao objeto. Para métodos de abrir e fechar modal por exemplo, manipulando a DOM por classe CSS. Porque chamar `Modal.open()` deixa muito mais claro o que tá acontecendo do que `modal.classList.add("open")` e etc. Deixa mais limpo, entendível e manutenível;
 * Modularizar separarando em arquivos com nomes semânticos também;
 * Funções utilitárias pra reduzir uso de if/else (retornando true ou false pra mais de uma coisa, daí eu passo só essa função como condicional, e fica 1 if só)
@@ -189,8 +184,7 @@ O conceito de modularizar é justamente separar em módulos, separa em diferente
 > - DICA 1: Comece com funçõeszonas mesmo, grandes, com tudo o que você precisa fazer. Depois vc vai refatorando fazendo funções menores, criando lógicas de agrupamento de métodos e estrutura de dados como foi para o modal e alert error, melhorando semântica de variáveis e etc. Só depois de fazer td q agt entende o que realmente vai ser necessário e vai ter sentido de ser feito.
 > - DICA 2: DÊ SEMPRE O SEU MELHOR E NÃO SURTA POR NÃO FAZER MAIS. Se hoje você pode melhorar a semântica de uma variável de uma forma, faça. Amanhã você aprende algo novo e melhora suas ideias sobre refatoração e já vai estar criando estruturas de dados semanticas super lógicas, coerentes e entendíveis. Faz o que sabe, mas faz. Não feche os olhos pro que você pode fazer hoje e não surta por não saber fazer mais agora.
 
-
-### ...
+---
 
 ### Outras anotações
 
