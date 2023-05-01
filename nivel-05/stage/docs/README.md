@@ -182,7 +182,7 @@ O conceito de modularizar é justamente separar em módulos, separa em diferente
 
 > OBS.: 
 > - DICA 1: Comece com funçõeszonas mesmo, grandes, com tudo o que você precisa fazer. Depois vc vai refatorando fazendo funções menores, criando lógicas de agrupamento de métodos e estrutura de dados como foi para o modal e alert error, melhorando semântica de variáveis e etc. Só depois de fazer td q agt entende o que realmente vai ser necessário e vai ter sentido de ser feito.
-> - DICA 2: DÊ SEMPRE O SEU MELHOR E NÃO SURTA POR NÃO FAZER MAIS. Se hoje você pode melhorar a semântica de uma variável de uma forma, faça. Amanhã você aprende algo novo e melhora suas ideias sobre refatoração e já vai estar criando estruturas de dados semanticas super lógicas, coerentes e entendíveis. Faz o que sabe, mas faz. Não feche os olhos pro que você pode fazer hoje e não surta por não saber fazer mais agora.
+> - DICA 2: DÊ SEMPRE O SEU MELHOR E NÃO SURTA POR NÃO FAZER MAIS. Se hoje você pode melhorar a semântica de uma variável de uma forma, faça. Amanhã você aprende algo novo e melhora suas ideias sobre refatoração e já vai estar criando estruturas de dados semanticas super lógicas, coerentes e entendíveis, inteligíveis. Faz o que sabe, mas faz. Não feche os olhos pro que você pode fazer hoje e não surta por não saber fazer mais agora.
 
 ---
 
