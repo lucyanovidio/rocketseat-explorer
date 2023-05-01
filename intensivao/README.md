@@ -1,6 +1,6 @@
 # 💻 Intensivão - Stages 1 ao 4
 
-**Status: `Em desenvolvimento ⏳`**
+**Status: `Concluído ✅`**
 
 <br>
 
