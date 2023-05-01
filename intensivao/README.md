@@ -13,4 +13,4 @@ O Intensivão não substituiria as aulas, mas funcionaria como um acelerador par
 Nele foram desenvolvidos 2 desafios:
 
 * <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/intensivao/desafio-01">1. Página Explore sem limites</a>
-* <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/intensivao/desafio-02">2. </a>
+* <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/intensivao/desafio-02">2. Exercícios: Iniciando com JavaScript</a>
