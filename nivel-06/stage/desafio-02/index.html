@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SPA Universe</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./src/js/index.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">
+              <img
+                src="./src/img/logo.svg"
+                alt="Logo de SPA Universe que representa um ícone de buraco negro"
+              />
+            </a>
+          </li>
+          <li><a href="/" onclick="route()">Home</a></li>
+          <li><a href="/universe" onclick="route()">O Universo</a></li>
+          <li><a href="/exploration" onclick="route()">Exploração</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div id="app"></div>
+  </body>
+</html>
