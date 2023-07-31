@@ -41,7 +41,7 @@ Você pode conferir os projetos e minhas anotações de cada conteúdo nos diret
   </tr>
   <tr>
     <td><a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-05/">Nível 5</a></td>
-    <td>Nível 6</td>
+    <td><a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-06/">Nível 6</a></td>
     <td>Nível 7</td>
     <td>Nível 8</td>
   </tr>
