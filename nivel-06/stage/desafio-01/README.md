@@ -1,7 +1,5 @@
 # Desafio 1 - Aprendendo sobre SPA ✅
 
-* <a href="https://lucyanovidio.github.io/rocketseat-explorer/nivel-06/stage/desafio-01/">Acesse aqui.</a>
-
 ## 💻 O desafio
 
 Nesta prática a ideia foi entender como alguns conceitos são aplicados e funcionam, pensando em conhecimentos que serão necessários quando vermos o uso de bibliotecas e frameworks, como React. Nesse momento vi um pouco sobre:
@@ -12,6 +10,8 @@ Nesta prática a ideia foi entender como alguns conceitos são aplicados e funci
 * Orientação a objetos com uso de classes e mais
 * Histórico do navegador
 * Uso do servidor *Lite-server*
+
+> Você pode conferir o desafio <a href="https://github.com/lucyanovidio/spa-universe">SPA Universe</a>! Onde apliquei o que aprendi aqui.
 
 ## ⚡ Como rodar
 

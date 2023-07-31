@@ -9,7 +9,7 @@
 Nele foram desenvolvidos alguns projetos para prática desses conceitos:
 
 * <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-06/stage/desafio-01">1. Aprendendo sobre SPA</a>
-* <a href="https://github.com/lucyanovidio/rocketseat-explorer/tree/main/nivel-06/stage/desafio-02">2. SPA Universe</a>
+* <a href="https://github.com/lucyanovidio/spa-universe">2. SPA Universe</a>
 
 Deixei minhas anotações pessoais aqui:
 
